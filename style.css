@@ -72,17 +72,17 @@ html {
     flex-direction: column;
 }
 
-.box h2, .box h3, .genass img {
+.box h2, .box ul, .genass #ga {
     transition: all 0.3s ease-in-out;
 }
 
-.box:hover h2, .genass:hover #ga {
+.box:hover h2, .epic:hover ul, .genass:hover #ga {
    transform: translateX(-300%);
 }
 
 .box .cover {
-    width: 100%;
     height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -178,10 +178,6 @@ html {
     background-color: rgb(40,154,183);
 }
 
-/*.genass:hover {
-    opacity: 0;
-}*/
-
 .genass #ga {
     height: 200px;
     width: 200px;
@@ -228,24 +224,37 @@ html {
     text-align: left;
 }
 
-.contact h3 {
+.contact h2 {
     margin-left: 20px;
+    margin-top: 140px;
     font-family: "Oswald", Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     color: rgb(64,64,64);
 }
 
-.contact p {
+.contact .cover {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.contact .cover p {
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: -140px;
     font-family: "Oswald", Helvetica, sans-serif;
-    font-size: .75em;
+    font-size: .9em;
     color: rgb(64,64,64);
 }
 
 .social {
     display: flex;
-    position: fixed;
     flex-direction: row;
     margin-top: 30px;
     margin-left: 20px;
