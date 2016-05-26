@@ -28,7 +28,7 @@ html {
 }
 
 #about {
-    background: url("city.jpg") no-repeat center center;
+    background: url("images/city2.jpg") no-repeat center center;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -44,23 +44,27 @@ html {
     margin-top: -150px;
     margin-left: auto;
     margin-right: auto;
-    color: #444;
+    color: rgb(64,64,64);
 }
 
 #about p:not(#joke) {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
     margin-top: 5px;;
-    color: #444;
+    color: rgb(64,64,64);
     margin-left: auto;
     margin-right: auto;
+}
+
+#about p span {
+    color: rgb(188,12,38);
 }
 
 #joke {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 0.5em;
     margin-top: 5px;
-    color: #444;
+    color: rgb(64,64,64);
     margin-left: auto;
     margin-right: auto;
 }
@@ -174,14 +178,14 @@ html {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
     margin-top: 5px;;
-    color: #fff;
+    color: rgb(255,255,255);
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
 
 #contact {
-    background: url("upsidedown.jpg") no-repeat center center;
+    background: url("images/upside2.jpg") no-repeat center center;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -189,4 +193,48 @@ html {
     width: 50%;
     height: 50%;
     float: right;
+}
+
+#contact h3 {
+    margin-left: 20px;
+    font-family: "Oswald", Helvetica, sans-serif;
+    font-size: 1em;
+    color: rgb(64,64,64);
+}
+
+#contact p {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: "Oswald", Helvetica, sans-serif;
+    font-size: .75em;
+    color: rgb(64,64,64);
+}
+
+.social {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 20px;
+ }
+
+.social li {
+    list-style-type: none;
+    width: 45px;
+    margin-right: 10px;
+ }
+
+.social li a {
+    display: block;
+    background-color: rgb(64,64,64);
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px 0px rgb(0,0,0);
+    border-right: 1px solid rgb(239,227,210);
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+.social li a img {
+    margin-top: 3px;
+    margin-left: 6px;
 }
