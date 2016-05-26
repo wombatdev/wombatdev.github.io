@@ -27,36 +27,39 @@ html {
     display: block;
 }
 
-#about {
-    background: url("images/city3.jpg") no-repeat center center;
-    display: flex;
-    flex-direction: column;
+.box {
+    overflow: hidden;
     position: relative;
-    justify-content: center;
+    text-align: center;
     width: 50%;
     height: 50%;
     float: left;
 }
 
-#about h1 {
+.about {
+    background: url("images/city3.jpg") no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about h1 {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 2.8em;
-    margin-top: -160px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -100px auto 20px auto;
     color: rgb(64,64,64);
 }
 
-#about p:not(#joke) {
+.about p:not(#joke) {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
-    margin-top: 0px;;
+    margin-top: 5px;;
     color: rgb(64,64,64);
     margin-left: auto;
     margin-right: auto;
 }
 
-#about p span {
+.about p span {
     color: rgb(188,12,38);
 }
 
@@ -69,18 +72,44 @@ html {
     margin-right: auto;
 }
 
-#epic {
+.box .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover .cover {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.epic {
     background-color: rgb(126,45,34);
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: center;
-    width: 50%;
-    height: 50%;
-    float: right;
 }
 
-#epic h2 {
+.epic h2 {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1.5em;
     margin-top: 0px;
@@ -89,13 +118,13 @@ html {
     color: rgb(245,242,226);
 }
 
-#epic ul {
+.epic ul {
     margin: 20px auto 0px auto;
     text-align: center;
     list-style-type: disc;
 }
 
-#epic ul li {
+.epic ul li {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
     color: rgb(245,242,226);
@@ -115,7 +144,7 @@ html {
     margin-right: auto;
 }
 
-#epic h6 {
+.epic h6 {
     display: inline-block;
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
@@ -125,7 +154,7 @@ html {
     color: rgb(245,242,226);
 }
 
-#epic p {
+.epic p {
     display: inline-block;
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 0.75em;
@@ -155,7 +184,21 @@ html {
     margin: 30px auto 10px auto;
 }
 
-#genass {
+.genass {
+    background-color: rgb(40,154,183);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.genass #ga {
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.genass:hover .cover {
     background-color: rgb(40,154,183);
     display: flex;
     flex-direction: column;
@@ -166,7 +209,7 @@ html {
     float: left;
 }
 
-#ga {
+#ga-cover {
     height: 100px;
     width: 100px;
     margin-left: auto;
@@ -174,7 +217,7 @@ html {
     margin-bottom: 30px;
 }
 
-#genass p {
+.genass:hover .cover p {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
     margin-top: 5px;;
@@ -184,25 +227,21 @@ html {
     margin-top: 20px;
 }
 
-#contact {
+.contact {
     background: url("images/upside3.jpg") no-repeat center center;
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: center;
-    width: 50%;
-    height: 50%;
-    float: right;
 }
 
-#contact h3 {
+.contact h3 {
     margin-left: 20px;
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
     color: rgb(64,64,64);
 }
 
-#contact p {
+.contact p {
     margin-left: 20px;
     margin-top: 20px;
     font-family: "Oswald", Helvetica, sans-serif;
