@@ -28,7 +28,7 @@ html {
 }
 
 #about {
-    background: url("images/city2.jpg") no-repeat center center;
+    background: url("images/city3.jpg") no-repeat center center;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -40,8 +40,8 @@ html {
 
 #about h1 {
     font-family: "Oswald", Helvetica, sans-serif;
-    font-size: 3em;
-    margin-top: -150px;
+    font-size: 2.8em;
+    margin-top: -160px;
     margin-left: auto;
     margin-right: auto;
     color: rgb(64,64,64);
@@ -50,7 +50,7 @@ html {
 #about p:not(#joke) {
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: 1em;
-    margin-top: 5px;;
+    margin-top: 0px;;
     color: rgb(64,64,64);
     margin-left: auto;
     margin-right: auto;
@@ -185,7 +185,7 @@ html {
 }
 
 #contact {
-    background: url("images/upside2.jpg") no-repeat center center;
+    background: url("images/upside3.jpg") no-repeat center center;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -204,7 +204,7 @@ html {
 
 #contact p {
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: "Oswald", Helvetica, sans-serif;
     font-size: .75em;
     color: rgb(64,64,64);
@@ -214,7 +214,7 @@ html {
     display: flex;
     position: fixed;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 20px;
  }
 
