@@ -11,6 +11,10 @@
     color: inherit;
 }
 
+/* AM: Not a big deal, but in the future I would recommend leaving out big chunks of commented out code from the master branch of your work. */
+/* AM: I would either remove it or put it in a separate branch if you want to keep it. */
+/* AM: It's a good practice to get into since potential employers will be keeping an eye out for clean code. */
+
 /*
 html {
     background: url("") no-repeat center center fixed;
@@ -72,6 +76,7 @@ html {
     flex-direction: column;
 }
 
+/* AM: Rad transitions! */
 .box h2, .box ul, .genass #ga {
     transition: all 0.3s ease-in-out;
 }
@@ -133,6 +138,9 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* AM: This stylesheet is getting pretty long! I'm starting to see some opportunties for refactoring though... */
+/* AM: For example, the next two selectors share a lot of identical properties. Perhaps you could condense them into a single selector. */
 
 .epic h6 {
     display: inline-block;
