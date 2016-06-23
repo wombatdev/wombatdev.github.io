@@ -281,7 +281,7 @@ html {
     margin-left: 6px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .box {
         float: inherit;
     }
