@@ -283,6 +283,6 @@ html {
 
 @media screen and (min-width: 480px) {
     .container {
-        flex-direction: column;
+        float: inherit;
     }
 }
