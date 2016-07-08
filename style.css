@@ -11,6 +11,8 @@
     color: inherit;
 }
 
+
+
 /*
 html {
     background: url("") no-repeat center center fixed;
@@ -197,7 +199,6 @@ html {
     margin-right: auto;
     width: 100%;
     height: 100%;
-    float: left;
 }
 
 #ga-cover {
@@ -207,6 +208,9 @@ html {
     margin-right: auto;
     margin-top: -280px;
     margin-bottom: 30px;
+    color: white;
+    font-family: "Lobster", Helvetica, sans-serif;
+    font-size: 2em;
 }
 
 .genass .cover p {
